@@ -1,0 +1,144 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.book-container{
+    background-color: rgb(30, 84, 102);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.heads{
+    width: 100%;
+    /* background-color: antiquewhite; */
+    display: flex;
+}
+.left{
+    /* background-color: aliceblue; */
+    width: 96%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right button{
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    background-color: lightblue;
+    padding: 10px;
+    margin-right: 6px;
+}
+
+.right button:hover{
+    background-color: rgb(34, 100, 123);
+    color: white;
+    transition: .5s;
+    box-shadow: 0px 0px 8px black;
+}
+.header{
+    margin-top: 20px;
+    color: white;
+    font-size: 60px;
+}
+
+.showdata{
+    /* background-color: aliceblue; */
+    width: 90%;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+.showbooks{
+    background-color: lightblue;
+    width: 18%;
+    margin: 10px;
+    padding: 40px;
+    border-radius: 10px;
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    border: 1px solid white;
+    box-shadow: 0px 0px 8px lightblue;
+}
+
+.buttons{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.update{
+    margin: 10px;
+    width: 100%;
+    border: 1px solid green;
+    outline: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+.delete{
+    margin: 10px;
+    width: 100%;
+    border: 1px solid red;
+    outline: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+.render-form{
+    /* background-color: aqua; */
+    width: 100%;
+}
+.box{
+    width: 100%;
+    /* background-color: #fff; */
+}
+
+.render-inp{
+    width: 98%;
+    padding: 6px;
+    margin: 2px;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+}
+.edit-button{
+    width: 100%;
+    margin-top: 8px;
+    padding: 6px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    background-color: rgb(76, 170, 202);
+    cursor: pointer;
+    color: white;
+}
+
+.edit-button:hover{
+    background-color: rgb(41, 132, 162);
+    transition: .5s;
+}
+
+.edit-head{
+    color: rgb(31, 83, 100);
+    text-align: center;
+}
+#sub-head{
+    color: rgb(45, 116, 140);
+    text-align: center;
+    margin-bottom: 10px ;
+}
+

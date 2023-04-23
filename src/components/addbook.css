@@ -1,0 +1,84 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.addbook-container{
+    height: 100vh;
+    background-color: rgb(30, 84, 102);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.book-heading{
+    margin-top: 20px;
+    color: white;
+    font-size: 60px;
+}
+
+#sub{
+    color: white;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+a button{
+    border: none;
+    padding: 10px 50px;
+    background-color: rgb(76, 170, 202);
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+a button:hover{
+    background-color: rgb(41, 132, 162);
+    transition: .5s;
+}
+
+
+.addform{
+    background-color: lightblue;
+    width: 30%;
+    height: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 80px 0px;
+    border-radius: 20px;
+}
+
+.box{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.inp-box{
+    width: 80%;
+    height: 60%;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 2px;
+}
+
+#submit{
+    width: 80%;
+    height: 60%;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgb(76, 170, 202);
+    color: white;
+    font-weight: 600;
+}
+#submit:hover{
+    background-color: rgb(41, 132, 162);
+    transition: .5s;
+}
