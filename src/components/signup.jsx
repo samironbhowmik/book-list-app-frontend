@@ -27,7 +27,7 @@ function Signup() {
         return
     }
 
-    const res = await axios.post("http://localhost:7000/signup", {email:email, password:password})
+    const res = await axios.post("https://booklist-b8gz.onrender.com/signup", {email:email, password:password})
     console.log(res);
 
     if(res.data.status === "failed")

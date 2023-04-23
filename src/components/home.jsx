@@ -19,13 +19,13 @@ function Home() {
   }, []);
 
   const getData = async () => {
-    const res = await axios.get("http://localhost:7000/books");
+    const res = await axios.get("https://booklist-b8gz.onrender.com/books");
     console.log(res.data.book);
     setData(res.data.book);
   };
 
   const handleDelete = async(id)=>{
-    const res = await axios.delete(`http://localhost:7000/books/${id}`)
+    const res = await axios.delete(`https://booklist-b8gz.onrender.com/books/${id}`)
     console.log(res.data);
 
     const newList = data.filter((item)=> item._id !==id)
@@ -34,7 +34,7 @@ function Home() {
 
 const update = async (e) => {
     e.preventDefault();
-    const res = await axios.put(`http://localhost:7000/books/${isUpdating}`, {
+    const res = await axios.put(`https://booklist-b8gz.onrender.com/books/${isUpdating}`, {
       title,
       author,
       isbn,
@@ -86,7 +86,7 @@ const update = async (e) => {
   const handleLogout= async(e)=>{
     e.preventDefault()
     // console.log("working");
-    const res = await axios.get("http://localhost:7000/logout")
+    const res = await axios.get("https://booklist-b8gz.onrender.com/logout")
     console.log(res);
 
     if(res.data.status==="success")

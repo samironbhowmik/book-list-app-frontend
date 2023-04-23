@@ -13,7 +13,7 @@ function AddBook() {
     const handleSubmit = async(e) =>{
         e.preventDefault()
         // console.log("working");
-        const res = await axios.post("http://localhost:7000/books", {title:title, author:author, isbn:isbn, publisher:publisher, genre:genre})
+        const res = await axios.post("https://booklist-b8gz.onrender.com/books", {title:title, author:author, isbn:isbn, publisher:publisher, genre:genre})
         console.log(res);
         navigate("/home")
     }
